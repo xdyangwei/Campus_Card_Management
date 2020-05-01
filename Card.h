@@ -7,7 +7,7 @@
 
 #include <string>
 
-using str=std::string
+using str=std::string;
 
 class Card{
 public:
