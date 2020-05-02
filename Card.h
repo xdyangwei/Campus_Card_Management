@@ -17,35 +17,35 @@ public:
     void depositMoney(double money);
     int getTimes();
     void cancelAccount();
-private:
-    str name;
-    int sex;
-    int identity;
-    int id_number;
-    bool status;
-    double money;
-    int times;
+protected:
+    str Name;
+    int Sex;
+    int Identity;
+    int IdNumber;
+    bool Status;
+    double Money;
+    int Times;
 };
 
-class Teacher_Card: public Card{
+class TeacherCard: public Card{
 public:
-    Teacher_Card(str name1,int sex1,int identity1,int number,str school1);
+    TeacherCard(str name1,int sex1,int identity1,int number,str school1);
     void swipeCard();
 private:
-    str school;
+    str School;
 };
 
-class Student_Card: public Card{
+class StudentCard: public Card{
 public:
-    Student_Card(str name1,int sex1,int identity1,int number,str school1);
+    StudentCard(str name1,int sex1,int identity1,int number,str school1);
     void swipeCard();
 private:
-    str school;
+    str School;
 };
 
-class Family_Card: public Card{
+class FamilyCard: public Card{
 public:
-    Family_Card(str name1,int sex1,int identity1);
+    FamilyCard(str name1,int sex1,int identity1);
     void swipeCard();
 };
 #endif //CAMPUS_CARD_MANAGEMENT_CARD_H

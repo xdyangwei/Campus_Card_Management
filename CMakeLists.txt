@@ -3,4 +3,4 @@ project(Campus_Card_Management)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Campus_Card_Management main.cpp Card.cpp)
+add_executable(Campus_Card_Management main.cpp Card.cpp Bus.cpp Bus.h common_function.h common_function.cpp)
