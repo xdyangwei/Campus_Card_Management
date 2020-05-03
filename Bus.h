@@ -8,6 +8,8 @@
 #include <string>
 #include <tuple>
 #include "common_function.h"
+#include <iostream>
+
 
 template<int N>
 class Bus {
@@ -15,13 +17,13 @@ class Bus {
 public:
     Bus();
     void add();
-    std::tuple<int,int,int,str> getInfo();
+    std::tuple<int,str,int,str> getInfo();
     int getSize();
     void setCarNumber();
     void setDriver();
 private:
     int CarNumber;
-    int Type;
+    str Type;
     int Size;
     int Capacity;
     str Driver;

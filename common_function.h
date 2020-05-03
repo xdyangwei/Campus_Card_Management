@@ -13,6 +13,7 @@
 
 static std::array<std::string,4> drivers={"张三","李四","王五","小六"};
 
+static std::array<std::string ,2> type={"MiniBus","MegaBus"};
 std::pair<int,int> getCurrentTime();
 
 int randomNumber(int start,int end);
