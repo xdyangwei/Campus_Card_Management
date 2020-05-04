@@ -19,8 +19,8 @@ public:
     void add();
     std::tuple<int,str,int,str> getInfo();
     int getSize();
-    void setCarNumber();
-    void setDriver();
+    void setCarNumber(int num);
+    void setDriver(str driver);
 private:
     int CarNumber;
     str Type;
