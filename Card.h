@@ -5,6 +5,7 @@
 #ifndef CAMPUS_CARD_MANAGEMENT_CARD_H
 #define CAMPUS_CARD_MANAGEMENT_CARD_H
 
+#include <iostream>
 #include <string>
 
 using str=std::string;
@@ -12,11 +13,11 @@ using str=std::string;
 class Card{
 public:
     bool isValid();
-    double getMoney();
     virtual void swipeCard()=0;
-    void depositMoney(double money);
     int getTimes();
     void cancelAccount();
+    double getMoney();
+    void depositMoney(double money);
 protected:
     str Name;
     int Sex;
@@ -30,7 +31,7 @@ protected:
 class TeacherCard: public Card{
 public:
     TeacherCard(str name1,int sex1,int identity1,int number,str school1);
-    void swipeCard();
+    void swipeCard() override;
 private:
     str School;
 };
@@ -38,9 +39,10 @@ private:
 class StudentCard: public Card{
 public:
     StudentCard(str name1,int sex1,int identity1,int number,str school1);
-    void swipeCard();
+    void swipeCard() override;
 private:
     str School;
+
 };
 
 class FamilyCard: public Card{
