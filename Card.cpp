@@ -62,6 +62,10 @@ void FamilyCard::swipeCard() {
         Times+=1;return ;
     }else if(Times==20){
         std::cout<<"本次开始收费！"<<std::endl;
-        
     }
+    if (Money<2){
+        std::cout<<"当前一卡通余额不足请充值！"<<std::endl;return;
+    }
+    Money-=2;
+    Times+=1;
 }

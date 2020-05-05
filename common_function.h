@@ -17,4 +17,6 @@ static std::array<std::string ,2> type={"MiniBus","MegaBus"};
 std::pair<int,int> getCurrentTime();
 
 int randomNumber(int start,int end);
+
+std::pair<bool,int> openFile(std::string filename);
 #endif //CAMPUS_CARD_MANAGEMENT_COMMON_FUNCTION_H
