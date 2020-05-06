@@ -19,3 +19,14 @@ int randomNumber(int start,int end){
     int x=uniform_dist(e);
     return x;
 }
+
+//查询当前卡号是否存在
+std::pair<bool,Card*> openFile(std::string filename,int number){
+    std::fstream file(filename);
+    std::string line;
+    while(std::getline(file,line)){
+        std::stringstream str(line);
+        std::string CardNumber;
+        str>>CardNumber;
+    }
+}
